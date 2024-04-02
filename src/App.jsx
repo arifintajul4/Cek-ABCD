@@ -15,8 +15,8 @@ function App() {
   const [jumlahCharacter, setJumlahCharacter] = useState(0);
 
   const handleFindSameCharacter = () => {
-    const arrKamu = nama.kamu.toLowerCase().split('');
-    const arrDia = nama.dia.toLowerCase().split('');
+    const arrKamu = nama.kamu.toLowerCase().trim().split('');
+    const arrDia = nama.dia.toLowerCase().trim().split('');
     const sameCharacter = arrKamu.filter(
       (item) => arrDia.includes(item.toLowerCase()) && item !== ' '
     );
@@ -41,7 +41,7 @@ function App() {
     const jumlahCharacter = diffKamu.length + diffDia.length;
     setJumlahCharacter(jumlahCharacter);
   };
-
+  console.log(hasil);
   return (
     <>
       <main className="bg-gray-50 ">
@@ -91,7 +91,7 @@ function App() {
                           }`}
                           key={idx}
                         >
-                          {`${el}`}
+                          {el == ' ' ? <>&nbsp;</> : el}
                         </span>{' '}
                       </Fragment>
                     );
@@ -110,7 +110,7 @@ function App() {
                           }`}
                           key={idx}
                         >
-                          {`${el}`}
+                          {el == ' ' ? <>&nbsp;</> : el}
                         </span>{' '}
                       </Fragment>
                     );
