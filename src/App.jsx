@@ -113,7 +113,7 @@ function App() {
                   })}
                 </p>
                 <p className="text-center mt-3 text-lg">
-                  Jumlah character yang tidak sama{' '}
+                  Jumlah karakter yang tidak sama{' '}
                   <span className="font-bold text-2xl">{jumlahCharacter}</span>
                 </p>
               </div>
