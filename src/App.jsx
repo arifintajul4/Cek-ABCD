@@ -18,7 +18,7 @@ function App() {
     const arrKamu = nama.kamu.split('');
     const arrDia = nama.dia.split('');
     const sameCharacter = arrKamu.filter(
-      (item) => arrDia.includes(item) && item !== ' '
+      (item) => arrDia.includes(item.toLowerCase()) && item !== ' '
     );
     console.log(sameCharacter);
     setSameCharacter(sameCharacter);
@@ -32,8 +32,12 @@ function App() {
     });
 
     // sum of different character
-    const diffKamu = arrKamu.filter((item) => !sameCharacter.includes(item));
-    const diffDia = arrDia.filter((item) => !sameCharacter.includes(item));
+    const diffKamu = arrKamu.filter(
+      (item) => !sameCharacter.includes(item.toLowerCase())
+    );
+    const diffDia = arrDia.filter(
+      (item) => !sameCharacter.includes(item.toLowerCase())
+    );
     const jumlahCharacter = diffKamu.length + diffDia.length;
     setJumlahCharacter(jumlahCharacter);
   };
