@@ -15,8 +15,8 @@ function App() {
   const [jumlahCharacter, setJumlahCharacter] = useState(0);
 
   const handleFindSameCharacter = () => {
-    const arrKamu = nama.kamu.split('');
-    const arrDia = nama.dia.split('');
+    const arrKamu = nama.kamu.toLowerCase().split('');
+    const arrDia = nama.dia.toLowerCase().split('');
     const sameCharacter = arrKamu.filter(
       (item) => arrDia.includes(item.toLowerCase()) && item !== ' '
     );
@@ -85,7 +85,7 @@ function App() {
                         {' '}
                         <span
                           className={`${
-                            sameCharacter.includes(el)
+                            sameCharacter.includes(el.toLowerCase())
                               ? 'line-through text-gray-500'
                               : 'text-3xl'
                           }`}
@@ -104,7 +104,7 @@ function App() {
                         {' '}
                         <span
                           className={`${
-                            sameCharacter.includes(el)
+                            sameCharacter.includes(el.toLowerCase())
                               ? 'line-through text-gray-500'
                               : 'text-3xl'
                           }`}
