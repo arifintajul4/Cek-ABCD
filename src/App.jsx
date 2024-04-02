@@ -41,7 +41,7 @@ function App() {
     const jumlahCharacter = diffKamu.length + diffDia.length;
     setJumlahCharacter(jumlahCharacter);
   };
-  console.log(hasil);
+
   return (
     <>
       <main className="bg-gray-50 ">
