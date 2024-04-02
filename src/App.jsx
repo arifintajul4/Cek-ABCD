@@ -129,7 +129,7 @@ function App() {
           )}
           <div className=" fixed bottom-5 left-0 right-0 text-center">
             <p>
-              Made with <span className="text-red-500">&hearts;</span>{' '}
+              Dibuat dengan <span className="text-red-500">&hearts;</span>{' '}
               <a
                 target="_blank"
                 href="https://github.com/arifintajul4"
@@ -143,7 +143,7 @@ function App() {
               target="_blank"
               href="https://www.tiktok.com/@radityadika28/video/7352450617790549254"
             >
-              reference
+              sumber
             </a>
           </div>
         </div>
