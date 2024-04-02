@@ -127,6 +127,14 @@ function App() {
               </div>
             </div>
           )}
+          <div className=" fixed bottom-5 left-0 right-0 text-center">
+            <p>
+              Made with <span className="text-red-500">&hearts;</span>{' '}
+              <a href="https://github.com/arifintajul4" className="underline">
+                Tajul Arifin S
+              </a>
+            </p>
+          </div>
         </div>
       </main>
     </>
