@@ -130,10 +130,21 @@ function App() {
           <div className=" fixed bottom-5 left-0 right-0 text-center">
             <p>
               Made with <span className="text-red-500">&hearts;</span>{' '}
-              <a href="https://github.com/arifintajul4" className="underline">
+              <a
+                target="_blank"
+                href="https://github.com/arifintajul4"
+                className="underline"
+              >
                 Tajul Arifin S
               </a>
             </p>
+            <a
+              className="underline"
+              target="_blank"
+              href="https://www.tiktok.com/@radityadika28/video/7352450617790549254"
+            >
+              reference
+            </a>
           </div>
         </div>
       </main>
